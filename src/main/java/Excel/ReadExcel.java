@@ -157,14 +157,4 @@ public class ReadExcel {
 		fileOut.close();
 	}
 
-	public static void main(String[] args) throws IOException {
-		
-		writeXLSFile();
-		readXLSFile();
-		
-		writeXLSXFile();
-		readXLSXFile();
-
-	}
-
 }

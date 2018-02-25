@@ -1,6 +1,7 @@
 package Layout.Rodape;
 
-import java.time.temporal.JulianFields;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -8,26 +9,40 @@ import javax.swing.JPanel;
 public class Rodape {
 
 	public Rodape() {
-		// TODO Auto-generated constructor stub
+
 	}
-	
+
 	private JButton VerInfo() {
 		JButton VerInfo = new JButton();
 		VerInfo.setText("Ver Informações");
-		VerInfo.addActionListener(null);
+		VerInfo.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+		});
 		return VerInfo;
 	}
-	
-	private JButton GerarOutro() {
-		JButton GerarOutro = new JButton();
-		GerarOutro.setText("Gerar Outro");
-		GerarOutro.addActionListener(null);
-		return GerarOutro;
-		
+
+	private JButton GerarWord() {
+		JButton GerarWord = new JButton();
+		GerarWord.setText("Gerar Outro");
+		GerarWord.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		return GerarWord;
+
 	}
-	
-	private JPanel componente() {
+
+	public JPanel componente() {
 		JPanel componente = new JPanel();
+		componente.add(VerInfo());
+		componente.add(GerarWord());
 		return componente;
 	}
 }
